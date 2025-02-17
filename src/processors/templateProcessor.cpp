@@ -26,7 +26,6 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  *********************************************************************************/
-#pragma comment(lib, "Ws2_32.lib")
 
 #include <inviwo/template/processors/templateProcessor.h>
 
