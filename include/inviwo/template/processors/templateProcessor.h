@@ -41,10 +41,10 @@ namespace inviwo {
  * \brief VERY_BRIEFLY_DESCRIBE_THE_CLASS
  * DESCRIBE_THE_CLASS_FROM_A_DEVELOPER_PERSPECTIVE
  */
-class IVW_MODULE_TEMPLATE_API templateProcessor : public Processor {
+class IVW_MODULE_TEMPLATE_API TemplateProcessor : public Processor {
 public:
-    templateProcessor();
-    virtual ~templateProcessor() = default;
+    TemplateProcessor();
+    virtual ~TemplateProcessor() = default;
 
     virtual void process() override;
 

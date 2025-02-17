@@ -31,7 +31,7 @@
 
 namespace inviwo {
 
-    const ProcessorInfo templateProcessor::processorInfo_{
+    const ProcessorInfo TemplateProcessor::processorInfo_{
         "org.template.processor",  // Class identifier
         "templateProcessor",                    // Display name
         "template",                     // Category
@@ -39,17 +39,17 @@ namespace inviwo {
         Tags::CPU                           // Tags
         };
 
-    templateProcessor::templateProcessor()
+    TemplateProcessor::TemplateProcessor()
         : Processor()
     {
         LogInfo("template loaded");
     }
 
-void inviwo::templateProcessor::process() {
+void inviwo::TemplateProcessor::process() {
     LogInfo("ECHO FROM FIRST PROCESSOR");
 }
 
-const ProcessorInfo templateProcessor::getProcessorInfo() const
+const ProcessorInfo TemplateProcessor::getProcessorInfo() const
 {
     return processorInfo_;
 }

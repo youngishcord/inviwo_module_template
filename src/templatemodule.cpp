@@ -32,7 +32,7 @@
 
 namespace inviwo {
 
-templateModule::templateModule(InviwoApplication* app) : InviwoModule(app, "template") {
+TemplateModule::TemplateModule(InviwoApplication* app) : InviwoModule(app, "template") {
     LogInfo("template was loaded");
     // Add a directory to the search path of the Shadermanager
     // ShaderManager::getPtr()->addShaderSearchPath(getPath(ModulePath::GLSL));
@@ -40,7 +40,7 @@ templateModule::templateModule(InviwoApplication* app) : InviwoModule(app, "temp
     // Register objects that can be shared with the rest of inviwo here:
 
     // Processors
-    registerProcessor<templateProcessor>();
+    registerProcessor<TemplateProcessor>();
 
     // Properties
     // registerProperty<mySimpleTestModuleProperty>();

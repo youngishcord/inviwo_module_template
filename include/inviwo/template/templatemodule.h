@@ -33,10 +33,10 @@
 
 namespace inviwo {
 
-class IVW_MODULE_TEMPLATE_API templateModule : public InviwoModule {
+class IVW_MODULE_TEMPLATE_API TemplateModule : public InviwoModule {
 public:
-    templateModule(InviwoApplication* app);
-    virtual ~templateModule() = default;
+    TemplateModule(InviwoApplication* app);
+    virtual ~TemplateModule() = default;
 };
 
 }  // namespace inviwo
