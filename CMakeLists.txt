@@ -13,8 +13,14 @@ set(SOURCE_FILES
 )
 ivw_group("Source Files" ${SOURCE_FILES})
 
+set(PYTHON_FILES
+    # Add pythons
+)
+ivw_group("Python Files" ${PYTHON_FILES})
+
 set(SHADER_FILES
 	# Add shaders
+    pyProcessors/template.py
 )
 ivw_group("Shader Files" ${SHADER_FILES})
 
@@ -23,7 +29,7 @@ set(TEST_FILES
 )
 ivw_add_unittest(${TEST_FILES})
 
-ivw_create_module(${SOURCE_FILES} ${HEADER_FILES} ${SHADER_FILES})
+ivw_create_module(${SOURCE_FILES} ${HEADER_FILES} ${SHADER_FILES} ${PYTHON_FILES})
 
 # Add shader directory to install package
 #ivw_add_to_module_pack(${CMAKE_CURRENT_SOURCE_DIR}/glsl)
