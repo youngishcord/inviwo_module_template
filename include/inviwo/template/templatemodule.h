@@ -30,6 +30,7 @@
 
 #include <inviwo/template/templatemoduledefine.h>
 #include <inviwo/core/common/inviwomodule.h>
+#include <modules/python3/pythonprocessorfolderobserver.h>
 
 namespace inviwo {
 
@@ -37,6 +38,8 @@ class IVW_MODULE_TEMPLATE_API TemplateModule : public InviwoModule {
 public:
     TemplateModule(InviwoApplication* app);
     virtual ~TemplateModule() = default;
+
+    PythonProcessorFolderObserver pythonFolderObserver_; // for python processors
 };
 
 }  // namespace inviwo
